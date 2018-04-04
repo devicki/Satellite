@@ -4,7 +4,7 @@
   "description": "Landing page for Satellite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/devicki/Satellite#readme",
   "devDependencies": {
     "node-sass": "^4.8.3"
+  },
+  "dependencies": {
+    "reset-css": "^3.0.0"
   }
 }
