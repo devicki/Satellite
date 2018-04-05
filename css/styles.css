@@ -87,7 +87,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  color: white;
+  color: #fff;
   font-family: 'Lato', sans-serif;
   vertical-align: baseline; }
 
@@ -165,7 +165,7 @@ body {
     background-color: #9b9c9b;
     height: 0; }
     .wrapper .right-side .bottom {
-      background-color: #dbdfe9;
+      background: url("../../img/astro.png") center right no-repeat, linear-gradient(135deg, #3e4040, #181818);
       width: 0%; }
 
 .main-header {
@@ -195,6 +195,8 @@ nav {
     padding: 5px 0; }
     nav li a {
       text-decoration: none; }
+      nav li a:hover {
+        color: #216AB2; }
 
 .social-container .email::after {
   content: "";
@@ -205,11 +207,15 @@ nav {
   border-bottom: 1px solid #dbdfe9;
   margin: 2em 0; }
 
-.social-container .social-buttons .btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: solid 1px #dbdfe9;
-  font-size: 3.5em;
-  text-align: center;
-  margin-bottom: 10px; }
+.social-container .social-buttons {
+  display: flex;
+  justify-content: space-around; }
+  .social-container .social-buttons .btn {
+    font-size: 3.2em; }
+    .social-container .social-buttons .btn:hover {
+      color: #216AB2;
+      transform: scale(1.2); }
+
+.bottom {
+  width: 100%;
+  height: 100%; }

@@ -25,7 +25,7 @@
         }
 
          & .bottom {
-            background-color: $swatch_3;
+            background: url("../../img/astro.png") center right no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
             width: 0%;
         }
     }
