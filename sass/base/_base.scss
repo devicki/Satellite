@@ -88,10 +88,9 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    color:#000;
+    color:rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
     vertical-align: baseline;
-    overflow: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -143,6 +142,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-html {
+body {
     font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
 }
