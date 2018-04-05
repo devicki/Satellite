@@ -5,11 +5,11 @@
     display: flex;
     & .left-side {
         flex: 1 1 auto; 
-        background-color: $swatch_2;    
-        
+        background-color: $swatch_2;  
     }
+    
     & .right-side {
-        flex: 2 1 auto;
+        flex: 5 auto;
         display: flex;
         flex-direction: column;
         background-color: $swatch_5;
@@ -19,10 +19,9 @@
             
         }
 
-        & .bottom {
+         & .bottom {
             background-color: $swatch_3;
             width: 0%;
-            // transform: translateX(100%);
         }
     }
 }

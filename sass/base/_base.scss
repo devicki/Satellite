@@ -88,9 +88,10 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 62.5%;
-    font: inherit;
+    color:#000;
+    font-family: 'Lato', sans-serif;
     vertical-align: baseline;
+    overflow: hidden;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -141,4 +142,7 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+html {
+    font-size: 62.5%;
 }
