@@ -2,6 +2,7 @@
    v3.0 | 20180413
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -84,14 +85,16 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 62.5%;
-  font: inherit;
-  vertical-align: baseline; }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -104,48 +107,38 @@ main,
 menu,
 nav,
 section {
-  display: block; }
+    display: block;
+}
 
 /* HTML5 hidden-attribute fix for newer browsers */
+
 *[hidden] {
-  display: none; }
+    display: none;
+}
 
 body {
-  line-height: 1.5; }
+    line-height: 1.5;
+}
 
 ol,
 ul {
-  list-style: none; }
+    list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+    quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none; }
+    content: '';
+    content: none;
+}
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-color: #3e4040;
-  display: flex; }
-  .wrapper .left-side {
-    flex: 1 1 auto;
-    background-color: #3e4040; }
-  .wrapper .right-side {
-    flex: 2 1 auto;
-    display: flex;
-    flex-direction: column;
-    background-color: #9b9c9b;
-    height: 0; }
-    .wrapper .right-side .bottom {
-      background-color: #dbdfe9;
-      width: 0%; }
+    border-collapse: collapse;
+    border-spacing: 0;
+}
