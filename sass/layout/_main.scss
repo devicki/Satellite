@@ -1,0 +1,35 @@
+main.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+    max-width: 650px;
+    .text-content {
+       
+        font-weight: 700;
+    }
+    .link-content {
+        margin-top: 40px;
+        font-size: 1.3rem;
+        text-decoration: none;
+        a:first-child{
+            margin-right: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover {
+            color: $swatch_7;
+        }
+    }
+    .link-content::after {
+        content: "";
+        height: 1px;
+        display: block;
+        width: 50%;
+        border: 0;
+        border-bottom: 1px solid $swatch_3;
+        margin: 2em 0;
+    }
+}

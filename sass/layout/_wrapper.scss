@@ -3,6 +3,7 @@
     height: 100vh;
     background-color: $swatch_2;
     display: flex;
+    position: relative;
     & .left-side {
         flex: 1 1 auto; 
         background-color: $swatch_2; 
@@ -25,8 +26,9 @@
         }
 
          & .bottom {
-            background: url("../../img/astro.png") center right no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
+            background: url("../../img/astronaut.png") right/60% no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
             width: 0%;
+            overflow: visible;
         }
     }
 }

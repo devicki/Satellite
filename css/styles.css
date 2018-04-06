@@ -149,7 +149,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #3e4040;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .wrapper .left-side {
     flex: 1 1 auto;
     background-color: #3e4040;
@@ -165,8 +166,9 @@ body {
     background-color: #9b9c9b;
     height: 0; }
     .wrapper .right-side .bottom {
-      background: url("../../img/astro.png") center right no-repeat, linear-gradient(135deg, #3e4040, #181818);
-      width: 0%; }
+      background: url("../../img/astronaut.png") right/60% no-repeat, linear-gradient(135deg, #3e4040, #181818);
+      width: 0%;
+      overflow: visible; }
 
 .main-header {
   width: 100%;
@@ -216,6 +218,51 @@ nav {
       color: #216AB2;
       transform: scale(1.2); }
 
+.upper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start; }
+  .upper li.list-number {
+    font-size: 1.5rem; }
+  .upper li::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #216AB2;
+    margin: 6px; }
+
+.ulist {
+  padding: 30px; }
+
 .bottom {
   width: 100%;
   height: 100%; }
+
+main.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  max-width: 650px; }
+  main.content .text-content {
+    font-weight: 700; }
+  main.content .link-content {
+    margin-top: 40px;
+    font-size: 1.3rem;
+    text-decoration: none; }
+    main.content .link-content a:first-child {
+      margin-right: 30px; }
+    main.content .link-content a {
+      text-decoration: none; }
+    main.content .link-content a:hover {
+      color: #216AB2; }
+  main.content .link-content::after {
+    content: "";
+    height: 1px;
+    display: block;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid #dbdfe9;
+    margin: 2em 0; }
