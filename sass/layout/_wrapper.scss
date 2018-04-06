@@ -20,6 +20,7 @@
         flex-direction: column;
         background-color: $swatch_5;
         height: 0;
+        overflow: visible;
 
         & .upper {
             
@@ -28,7 +29,8 @@
          & .bottom {
             background: url("../../img/astronaut.png") right/60% no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
             width: 0%;
-            overflow: visible;
+            
+            
         }
     }
 }
