@@ -1,4 +1,26 @@
-$('ul li').click(function () {
-    $("content p").removeClass("showText");
-    $(this).addClass('showText);
-});
+let tabs = $("[id*='tabs-']");
+let links = $('#tabs a');
+let counter = $('.counter')
+tabs.hide();
+tabs[0].style.display = "block";
+
+links.click(function (e) {
+    let target = e.target;
+    let targetIdText = target.attributes.href.textContent;
+
+
+    tabs.each(function (i) {
+        if (targetIdText === tabs[i].attributes.id.value) {
+            this.style.display = "block"
+
+            //counter
+            let counterText = targetIdText.split('')
+            counterNumber = counterText[counterText.length - 1];
+            counter.text('0' + counterNumber);
+
+        } else {
+            this.style.display = "none"
+        }
+    });
+})
+

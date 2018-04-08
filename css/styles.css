@@ -145,9 +145,6 @@ body {
   color: #216AB2;
   text-decoration: line-through; }
 
-.showText {
-  display: block; }
-
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -275,9 +272,3 @@ main.content {
     border: 0;
     border-bottom: 1px solid #dbdfe9;
     margin: 2em 0; }
-
-p.why-us {
-  display: none; }
-
-p.resources {
-  display: none; }

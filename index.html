@@ -26,20 +26,22 @@
             </header>
             <!-- NAVIGATION -->
             <nav>
-                <ul>
-                    <li>
-                        <a href="#" class="active" id="home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" id="why-us">Why Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Resources</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+                <div id="tabs">
+                    <ul>
+                        <li>
+                            <a href="#tabs-1">Home</a>
+                        </li>
+                        <li>
+                            <a href="#tabs-2">Why Us</a>
+                        </li>
+                        <li>
+                            <a href="#tabs-3">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#tabs-4">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <!-- SOCIAL BARS -->
             <div class="social-container">
@@ -56,15 +58,6 @@
         <!-- RIGHT SIDE -->
         <div class="right-side">
             <div class="upper right-side">
-
-                <div class="ulist">
-                    <ul>
-                        <li class="list-number line">01</li>
-                        <li class="list-number">02</li>
-                        <li class="list-number">03</li>
-                        <li class="list-number">04</li>
-                    </ul>
-                </div>
                 <div class="counter">01</div>
             </div>
 
@@ -76,27 +69,41 @@
         <!-- MAIN -->
 
     </div>
-    <main class="content ">
-        <p class="text-content showText">We are
-            <span class="colored-txt">Global Brand Agency.</span> We are your satellite office for all cross-border marketing and branding efforts.
-            We work seemlessly with your team to the effectively and efficientyl execute your strategy andincrease your marketing
-            ROI.
-        </p>
-        <div class="link-content ">
-            <a href="# ">Check Our Services</a>
-            <a href="# ">Lets Work Together</a>
+    <main class="content">
+        <div id="#tabs-1">
+            <p class="text-content home">We are
+                <span class="colored-txt">Global Brand Agency.</span> We are your satellite office for all cross-border marketing and branding efforts.
+                We work seemlessly with your team to the effectively and efficientyl execute your strategy andincrease your
+                marketing ROI.
+            </p>
+            <div class="link-content ">
+                <a href="# ">Check Our Services</a>
+                <a href="# ">Lets Work Together</a>
+            </div>
         </div>
-        <p class="why-us" data-txtcontent="why-us">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit iusto ,
-            <span class="colored-txt">molestiae</span> doloribus cumque magnam culpa error ex voluptatum. Lorem ipsum dolor sit amet.
-        </p>
-        <p class="resources">
-            RESREERSSRSonsectetur adipisicing elit. Nobis suscipit iusto ,
-            <span class="colored-txt">molestiae</span> doloribus cumque magnam culpa error ex voluptatum. Lorem ipsum dolor sit amet.
-        </p>
+        <div id="#tabs-2">
+            <p class="why-us" data-active="why">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis suscipit iusto ,
+                <span class="colored-txt">molestiae</span> doloribus cumque magnam culpa error ex voluptatum. Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+
+        <div id="#tabs-3">
+            <p class="resources">
+                RESREERSSRSonsectetur adipisicing elit. Nobis suscipit iusto ,
+                <span class="colored-txt">molestiae</span> doloribus cumque magnam culpa error ex voluptatum. Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div id="#tabs-4">
+            <p class="contact">
+                CONTACTr adipisicing elit. Nobis suscipit iusto ,
+                <span class="colored-txt">molestiae</span> doloribus cumque magnam culpa error ex voluptatum. Lorem ipsum dolor sit amet.
+            </p>
+        </div>
     </main>
 
     <script src="node_modules\jquery\dist\jquery.min.js "></script>
+
     <script src="/scritpts/contentChange.js"></script>
     <script>
         $('.right-side').hide().delay(400).animate({
