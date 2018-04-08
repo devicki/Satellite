@@ -91,6 +91,7 @@ video {
     color: #fff;
     font-family: 'Lato', sans-serif;
     vertical-align: baseline;
+    font-size: 10px;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -142,9 +143,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-body {
-    font-size: 62.5%;
-}
 * {
     box-sizing: border-box;
 }
+

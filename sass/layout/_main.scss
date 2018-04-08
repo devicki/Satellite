@@ -3,17 +3,15 @@ main.content {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 1.7rem;
-    max-width: 650px;
-    .text-content {
-        font-weight: 700;
-    }
+    font-size: 15em;
+    max-width: 65rem;
+
     .link-content {
-        margin-top: 40px;
-        font-size: 1.3rem;
+        margin-top: 4rem;
+        font-size: 1rem;
         text-decoration: none;
         a:first-child{
-            margin-right: 30px;
+            margin-right: 3rem;
         }
         a{
             text-decoration: none;
@@ -30,6 +28,12 @@ main.content {
         border: 0;
         border-bottom: 1px solid $swatch_3;
         margin: 2em 0;
+    }
+    .contacts {
+        display: flex;
+        .contact:last-child{
+            margin-left: 40px;
+        }
     }
 }
 

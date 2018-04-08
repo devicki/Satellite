@@ -6,10 +6,14 @@
         height: 70px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         font-size: 1.7em;
+        .slide-in {
+            font-family: 'Audiowide', cursive;
+            font-size: 1.9rem;
+        }
         .title {
-            font-size: 1em;
+            font-size: 1.2rem;
         }
     }
     .slide-in {
