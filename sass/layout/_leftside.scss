@@ -38,6 +38,9 @@ nav {
 }
 
 .social-container {
+    p.email {
+        font-size: 1rem;
+    }
     .email::after {
         content: "";
         height: 1px;

@@ -12,6 +12,9 @@
         align-items: flex-start;
         justify-content: space-between;
         padding: 30px 50px;
+        .slide-in{
+            
+        }
     }
     
     & .right-side {
@@ -20,17 +23,23 @@
         flex-direction: column;
         background-color: $swatch_5;
         height: 0;
-        overflow: visible;
-
         & .upper {
-            
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+     
+        
         }
 
          & .bottom {
             background: url("../../img/astronaut.png") right/60% no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
             width: 0%;
-            
-            
-        }
+        }  
     }
-}
+    .counter {
+            font-size: 15rem;
+            color: $greyAlpha;
+            z-index: 1;
+            pointer-events: none;
+        } 
+    }
