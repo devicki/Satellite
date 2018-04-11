@@ -2,18 +2,18 @@ main.content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 1.7rem;
-    max-width: 650px;
+    transform: translate(-50%, -50%);
+    font-size: 11.7rem;
+    width: 95rem;
     font-weight: 700;
     .link-content {
-        margin-top: 40px;
+        margin-top: 4rem;
         font-size: 1.3rem;
         text-decoration: none;
-        a:first-child{
-            margin-right: 30px;
+        a:first-child {
+            margin-right: 3rem;
         }
-        a{
+        a {
             text-decoration: none;
         }
         a:hover {
@@ -27,11 +27,6 @@ main.content {
         width: 50%;
         border: 0;
         border-bottom: 1px solid $swatch_3;
-        margin: 2em 0;
-    }
-    .tabSize {
-        height: 300px;
-        width: 600px;
+        margin: 2rem 0;
     }
 }
-
