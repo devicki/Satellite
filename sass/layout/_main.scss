@@ -1,12 +1,13 @@
 main.content {
     position: absolute;
-    top: -50%;
+    top: 40%;
     left: -10%;
     transform: translate(0, 0);
     font-size: 3.1rem;
     max-width: 80rem;
     display: none;
     padding: 0 2rem;
+    z-index: 10;
     .link-content {
         margin-top: 4rem;
         font-size: 1.8rem;

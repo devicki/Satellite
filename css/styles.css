@@ -46,13 +46,14 @@
 
 main.content {
   position: absolute;
-  top: -50%;
+  top: 40%;
   left: -10%;
   transform: translate(0, 0);
   font-size: 3.1rem;
   max-width: 80rem;
   display: none;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  z-index: 10; }
   main.content .link-content {
     margin-top: 4rem;
     font-size: 1.8rem;
@@ -282,20 +283,6 @@ table {
 html {
   font-size: 62.5%; }
 
-@media only screen and (max-width: 900px) {
-  html {
-    font-size: 42%; }
-  .wrapper {
-    flex-direction: column; }
-  nav ul {
-    display: flex;
-    flex-direction: row; }
-    nav ul li {
-      display: inline-block;
-      margin-right: 5rem; }
-  .social-container {
-    display: none; } }
-
 @media only screen and (max-width: 1324px) {
   html {
     font-size: 50%; }
@@ -305,9 +292,43 @@ html {
     transform: rotate(0deg);
     align-self: flex-start;
     margin-left: auto;
-    padding: 3rem 5rem; }
-  main.content {
-    transform: translate(-50px, 0); } }
+    padding: 3rem 5rem; } }
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 42%; }
+  nav {
+    width: 100%; }
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: red; }
+      nav ul li {
+        display: inline-block;
+        margin-right: 4rem; }
+  .social-container {
+    display: none; }
+  .wrapper {
+    flex-direction: column; }
+    .wrapper .counter {
+      margin-right: 3rem; }
+  .wrapper .right-side .upper .fliped-text {
+    display: none; }
+  .right-side .upper main.content {
+    top: 0;
+    left: 0;
+    padding: 4rem;
+    flex-wrap: wrap; }
+  main.content .contacts {
+    flex-direction: column;
+    font-size: .7em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    main.content .contacts.contact {
+      padding: 5rem 0;
+      margin-left: 0; } }
 
 @media only screen and (min-width: 1800px) {
   html {
