@@ -119,6 +119,7 @@ section {
 body {
     line-height: 1.5;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 ol,
@@ -155,28 +156,13 @@ html {
     font-size: 62.5%;
 }
 
-@media only screen and (max-width: 1000px) {
-    html {
-        font-size: 50%;
-    }
-    .wrapper .right-side .bottom {
-        background: url("../../img/astronaut.png") right/90% no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
-    }
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     html {
         font-size: 42%;
     }
     .wrapper {
         flex-direction: column;
     }
-    main.content {
-        top: 35%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-    }
-    .left-side {}
     nav ul {
         display: flex;
         flex-direction: row;
@@ -188,19 +174,29 @@ html {
     .social-container {
         display: none;
     }
-    .contacts {
-        font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 1324px) {
+    html {
+        font-size: 50%;
+    }
+    .wrapper .right-side .bottom {
+        background: url("../../img/astronaut.png") right/90% no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
+    }
+    .wrapper .right-side .upper .fliped-text {
+        transform: rotate(0deg);
+        align-self: flex-start;
+        margin-left: auto;
+        padding: 3rem 5rem;
+    }
+    main.content {
+        transform: translate(-50px, 0);
     }
 }
 
-// @media only screen and (max-width: 1200px) {
-//     html {
-//         font-size: 35%;
-//     }
-// }
 @media only screen and (min-width: 1800px) {
     html {
-        font-size: 80%;
+        font-size: 75%;
     }
 }
 

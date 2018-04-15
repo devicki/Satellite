@@ -17,7 +17,8 @@
     display: flex;
     flex-direction: column;
     background-color: #9b9c9b;
-    height: 0; }
+    height: 0;
+    position: relative; }
     .wrapper .right-side .upper {
       display: flex;
       flex-direction: row;
@@ -27,7 +28,8 @@
         transform: rotate(90deg);
         align-self: flex-end;
         font-size: 1.3rem;
-        margin-left: auto; }
+        margin-left: auto;
+        z-index: 3; }
     .wrapper .right-side .bottom {
       background: url("../../img/astronaut.png") right/70% no-repeat, linear-gradient(135deg, #3e4040, #181818);
       width: 0%; }
@@ -35,7 +37,6 @@
     font-size: 20rem;
     font-weight: 700;
     color: rgba(62, 64, 64, 0.5);
-    z-index: 0;
     background: linear-gradient(#9b9c9b, rgba(62, 64, 64, 0.5));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -45,11 +46,13 @@
 
 main.content {
   position: absolute;
-  top: 42%;
-  left: 45%;
-  transform: translate(-40%, -50%);
-  font-size: 2.8rem;
-  min-width: 65rem; }
+  top: -50%;
+  left: -10%;
+  transform: translate(0, 0);
+  font-size: 3.1rem;
+  max-width: 80rem;
+  display: none;
+  padding: 0 2rem; }
   main.content .link-content {
     margin-top: 4rem;
     font-size: 1.8rem;
@@ -69,10 +72,14 @@ main.content {
     border-bottom: 1px solid #dbdfe9;
     margin: 2rem 0; }
   main.content .contacts {
+    font-size: .7em;
     display: flex;
-    justify-content: space-between; }
+    justify-content: flex-start;
+    align-items: center; }
+    main.content .contacts .contact {
+      padding: 5rem 0; }
     main.content .contacts .contact:not(:first-child) {
-      margin-left: 4.2rem; }
+      margin-left: 4.5rem; }
 
 .main-header {
   width: 100%;
@@ -122,6 +129,14 @@ nav {
     .social-container .social-buttons .btn:hover {
       color: #216AB2;
       transform: scale(1.2); }
+
+.colored-txt {
+  color: #216AB2;
+  font-weight: 700; }
+
+.active {
+  color: #216AB2;
+  text-decoration: line-through; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v3.0 | 20180413
@@ -237,7 +252,8 @@ section {
 
 body {
   line-height: 1.5;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 ol,
 ul {
@@ -266,21 +282,11 @@ table {
 html {
   font-size: 62.5%; }
 
-@media only screen and (max-width: 1000px) {
-  html {
-    font-size: 50%; }
-  .wrapper .right-side .bottom {
-    background: url("../../img/astronaut.png") right/90% no-repeat, linear-gradient(135deg, #3e4040, #181818); } }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 42%; }
   .wrapper {
     flex-direction: column; }
-  main.content {
-    top: 35%;
-    left: 55%;
-    transform: translate(-50%, -50%); }
   nav ul {
     display: flex;
     flex-direction: row; }
@@ -288,13 +294,24 @@ html {
       display: inline-block;
       margin-right: 5rem; }
   .social-container {
-    display: none; }
-  .contacts {
-    font-size: 2.2rem; } }
+    display: none; } }
+
+@media only screen and (max-width: 1324px) {
+  html {
+    font-size: 50%; }
+  .wrapper .right-side .bottom {
+    background: url("../../img/astronaut.png") right/90% no-repeat, linear-gradient(135deg, #3e4040, #181818); }
+  .wrapper .right-side .upper .fliped-text {
+    transform: rotate(0deg);
+    align-self: flex-start;
+    margin-left: auto;
+    padding: 3rem 5rem; }
+  main.content {
+    transform: translate(-50px, 0); } }
 
 @media only screen and (min-width: 1800px) {
   html {
-    font-size: 80%; } }
+    font-size: 75%; } }
 
 /* 
 MEDIA BREAKPOINTS
@@ -304,10 +321,3 @@ tablet-land     900 - 1200px
 [normal stlyes] 1200 - 1800px
 big desktop     1800px +
 */
-.colored-txt {
-  color: #216AB2;
-  font-weight: 700; }
-
-.active {
-  color: #216AB2;
-  text-decoration: line-through; }

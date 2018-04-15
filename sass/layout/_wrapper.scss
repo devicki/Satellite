@@ -19,6 +19,7 @@
         flex-direction: column;
         background-color: $swatch_5;
         height: 0;
+        position: relative;
         & .upper {
             display: flex;
             flex-direction: row;
@@ -29,6 +30,7 @@
                 align-self: flex-end;
                 font-size: 1.3rem;
                 margin-left: auto;
+                z-index: 3;
             }
         }
         & .bottom {
@@ -40,7 +42,6 @@
         font-size: 20rem;
         font-weight: 700;
         color: $greyAlpha;
-        z-index: 0;
         background: linear-gradient($swatch_5, $greyAlpha);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
