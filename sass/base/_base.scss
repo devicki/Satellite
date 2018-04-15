@@ -150,12 +150,65 @@ table {
     box-sizing: inherit;
 }
 
+//1200px
 html {
     font-size: 62.5%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
+    }
+    .wrapper .right-side .bottom {
+        background: url("../../img/astronaut.png") right/90% no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
     }
 }
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 42%;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    main.content {
+        top: 35%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+    .left-side {}
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            display: inline-block;
+            margin-right: 5rem;
+        }
+    }
+    .social-container {
+        display: none;
+    }
+    .contacts {
+        font-size: 2.2rem;
+    }
+}
+
+// @media only screen and (max-width: 1200px) {
+//     html {
+//         font-size: 35%;
+//     }
+// }
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+/* 
+MEDIA BREAKPOINTS
+phone           0 - 600px
+tablet-port     600 - 900px
+tablet-land     900 - 1200px
+[normal stlyes] 1200 - 1800px
+big desktop     1800px +
+*/

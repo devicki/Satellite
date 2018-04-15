@@ -2,12 +2,12 @@ main.content {
     position: absolute;
     top: 42%;
     left: 45%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
+    transform: translate(-40%, -50%);
+    font-size: 2.8rem;
     min-width: 65rem;
     .link-content {
         margin-top: 4rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-decoration: none;
         a:first-child {
             margin-right: 3rem;
@@ -30,6 +30,7 @@ main.content {
     }
     .contacts {
         display: flex;
+        justify-content: space-between;
         .contact:not(:first-child) {
             margin-left: 4.2rem;
         }
