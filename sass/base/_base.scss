@@ -91,7 +91,6 @@ video {
     color: #fff;
     font-family: 'Lato', sans-serif;
     vertical-align: baseline;
-    font-size: 10px;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -119,6 +118,8 @@ section {
 
 body {
     line-height: 1.5;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 ol,
@@ -143,7 +144,94 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-* {
-    box-sizing: border-box;
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width: 1324px) {
+    html {
+        font-size: 50%;
+    }
+    .wrapper .right-side .bottom {
+        background: url("../../img/astronaut.png") right/90% no-repeat, linear-gradient(135deg, $swatch_2, $swatch_1);
+    }
+    .wrapper .right-side .upper .fliped-text {
+        transform: rotate(0deg);
+        align-self: flex-start;
+        margin-left: auto;
+        padding: 3rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 42%;
+    }
+    nav {
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+                display: inline-block;
+                margin-right: 3.5rem;
+            }
+        }
+    }
+    .social-container {
+        display: none;
+    }
+    .wrapper {
+        flex-direction: column;
+        .counter {
+            margin-right: 3rem;
+        }
+    }
+    .wrapper .right-side .upper .fliped-text {
+        display: none;
+    }
+    .right-side .upper main.content {
+        top: 0;
+        left: 0;
+        padding: 4rem;
+        flex-wrap: wrap;
+    }
+    main.content {
+        .contacts {
+            font-size: .7em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .contact {
+                padding: 4rem 2rem;
+            }
+            .contact:not(:first-child) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* 
+MEDIA BREAKPOINTS
+phone           0 - 600px
+tablet-port     600 - 900px
+tablet-land     900 - 1200px
+[normal stlyes] 1200 - 1800px
+big desktop     1800px +
+*/
