@@ -103,11 +103,11 @@ main.content {
 nav {
   padding: 3rem 0;
   font-size: 1.9rem; }
-  nav li {
+  nav ul li {
     padding: .5rem 0; }
-    nav li a {
+    nav ul li a {
       text-decoration: none; }
-      nav li a:hover {
+      nav ul li a:hover {
         color: #216AB2; }
 
 .social-container p.email {
@@ -302,11 +302,10 @@ html {
     nav ul {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      background-color: red; }
+      justify-content: space-between; }
       nav ul li {
         display: inline-block;
-        margin-right: 4rem; }
+        margin-right: 3.5rem; }
   .social-container {
     display: none; }
   .wrapper {
@@ -321,13 +320,14 @@ html {
     padding: 4rem;
     flex-wrap: wrap; }
   main.content .contacts {
-    flex-direction: column;
     font-size: .7em;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; }
-    main.content .contacts.contact {
-      padding: 5rem 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    main.content .contacts .contact {
+      padding: 4rem 2rem; }
+    main.content .contacts .contact:not(:first-child) {
       margin-left: 0; } }
 
 @media only screen and (min-width: 1800px) {
