@@ -63,7 +63,7 @@ main.content {
     main.content .link-content a {
       text-decoration: none; }
     main.content .link-content a:hover {
-      color: #216AB2; }
+      color: #0966c4; }
   main.content .link-content::after {
     content: "";
     height: 1px;
@@ -108,7 +108,7 @@ nav {
     nav ul li a {
       text-decoration: none; }
       nav ul li a:hover {
-        color: #216AB2; }
+        color: #0966c4; }
 
 .social-container p.email {
   font-size: 1.5rem; }
@@ -128,15 +128,15 @@ nav {
   .social-container .social-buttons .btn {
     font-size: 3rem; }
     .social-container .social-buttons .btn:hover {
-      color: #216AB2;
+      color: #0966c4;
       transform: scale(1.2); }
 
 .colored-txt {
-  color: #216AB2;
+  color: #0966c4;
   font-weight: 700; }
 
 .active {
-  color: #216AB2;
+  color: #0966c4;
   text-decoration: line-through; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -330,15 +330,14 @@ html {
     main.content .contacts .contact:not(:first-child) {
       margin-left: 0; } }
 
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 32%; }
+  nav {
+    width: 100%; }
+    nav ul li {
+      margin-right: 2.5rem; } }
+
 @media only screen and (min-width: 1800px) {
   html {
     font-size: 75%; } }
-
-/* 
-MEDIA BREAKPOINTS
-phone           0 - 600px
-tablet-port     600 - 900px
-tablet-land     900 - 1200px
-[normal stlyes] 1200 - 1800px
-big desktop     1800px +
-*/
