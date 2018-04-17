@@ -1,19 +1,21 @@
 main.content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 15em;
-    max-width: 65rem;
-
+    top: 40%;
+    left: -10%;
+    transform: translate(0, 0);
+    font-size: 3.1rem;
+    max-width: 80rem;
+    display: none;
+    padding: 0 2rem;
+    z-index: 10;
     .link-content {
         margin-top: 4rem;
-        font-size: 1rem;
+        font-size: 1.8rem;
         text-decoration: none;
-        a:first-child{
+        a:first-child {
             margin-right: 3rem;
         }
-        a{
+        a {
             text-decoration: none;
         }
         a:hover {
@@ -27,13 +29,18 @@ main.content {
         width: 50%;
         border: 0;
         border-bottom: 1px solid $swatch_3;
-        margin: 2em 0;
+        margin: 2rem 0;
     }
     .contacts {
+        font-size: .7em;
         display: flex;
-        .contact:last-child{
-            margin-left: 40px;
+        justify-content: flex-start;
+        align-items: center;
+        .contact {
+            padding: 5rem 0;
+        }
+        .contact:not(:first-child) {
+            margin-left: 4.5rem;
         }
     }
 }
-

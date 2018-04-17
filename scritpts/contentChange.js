@@ -23,4 +23,3 @@ links.click(function (e) {
         }
     });
 })
-
